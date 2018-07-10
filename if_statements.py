@@ -15,12 +15,13 @@ if user_name in my_known_people:
 "Hello {}, I know you {}!".format("John", "well")
 
 
-#### Exercise
+# Exercise
 
 def who_do_you_know():
     names = input("Enter the names of people you know, separated by commas: ")
     names_list = names.split(",")
     return names_list
+
 
 def ask_user():
     # Ask user for their name
@@ -30,5 +31,6 @@ def ask_user():
     user_name = input("Enter your name: ")
     if user_name in who_do_you_know():
         print("Hello {}, I know you!".format(user_name))
+
 
 ask_user()
